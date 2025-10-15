@@ -215,6 +215,40 @@ That's it! Your particle background will automatically initialize when the page 
 </style>
 ```
 
+### Real-World Example: Process Section
+
+Here's how you might use particles in different sections of your website:
+
+*Note: I personally prefer writing the particle div on one line since it looks more attached to the main container:*
+
+```html
+<section class="process">
+    <div class="particle-background" data-color-1="#00d76c" data-color-2="#a8e2ff" data-color-3="#0f1627" data-count="60" data-speed="1"></div>
+    
+    <div class="process-content">
+        <h2>Our Process</h2>
+        <p>Step-by-step workflow with animated background</p>
+    </div>
+</section>
+
+<style>
+.process {
+    position: relative;
+    min-height: 500px;
+    padding: 80px 20px;
+}
+
+.process-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+</style>
+```
+
 ## Advanced Usage
 
 ### Multiple Particle Backgrounds
