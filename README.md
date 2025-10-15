@@ -8,7 +8,7 @@ A lightweight, easy-to-use JavaScript library for creating beautiful animated pa
 - [Quick Start](#quick-start)
   - [1. Include the Library](#1-include-the-library)
   - [2. Create the HTML Structure](#2-create-the-html-structure)
-  - [3. Add the Required CSS](#3-add-the-required-css)
+  - [3. CSS is Already Included!](#3-css-is-already-included)
 - [Configuration Options](#configuration-options)
   - [Data Attributes](#data-attributes)
   - [Color Examples](#color-examples)
@@ -38,11 +38,14 @@ A lightweight, easy-to-use JavaScript library for creating beautiful animated pa
 
 ### 1. Include the Library
 
-Add the `particles.js` file to your project and include it in your HTML:
+Add both the `particles.js` and `particles.css` files to your project and include them in your HTML:
 
 ```html
+<link rel="stylesheet" href="particles.css">
 <script src="particles.js"></script>
 ```
+
+**⚠️ IMPORTANT: The CSS file is REQUIRED!** Without it, the particles won't display correctly.
 
 ### 2. Create the HTML Structure
 
@@ -69,9 +72,9 @@ Add a container div with the `particle-background` class and configure it with d
 
 *Personal preference: I like the one-liner format because it looks more attached to the main container and takes up less space in the code.*
 
-### 3. Add the Required CSS
+### 3. CSS is Already Included!
 
-Style your particle background container:
+The required CSS is already included in the `particles.css` file you linked in step 1. However, if you prefer to copy-paste the CSS into your own stylesheet, here's what the CSS contains:
 
 ```css
 .particle-background {
